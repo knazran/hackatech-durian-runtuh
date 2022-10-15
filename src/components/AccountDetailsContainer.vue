@@ -12,7 +12,7 @@
     <div class="bg-durianprimary-900 h-36 border-0" style="height:160px">
       <VueApexCharts height="140px" type="line" :options="options" :series="series"></VueApexCharts>
     </div>
-    <div  class="bg-durianprimary-900 py-2">
+    <div class="bg-durianprimary-900 py-2">
       <div class="grid grid-cols-4 text-xs text-center ">
         <p class="text-gray-300">1M</p>
         <p class="text-gray-300">3M</p>
@@ -20,8 +20,10 @@
         <p class="text-white  font-semibold">All</p>
       </div>
       <div class="flex justify-center space-x-4 my-4">
-        <button class="bg-yellow-400 rounded-full px-8 py-2 text-gray-700 font-semibold shadow-lg text-xs">Deposit</button>
-        <button class="bg-yellow-400 rounded-full px-8 py-2 text-gray-700 font-semibold shadow-lg text-xs">Withdraw</button>
+        <button
+          class="bg-yellow-400 rounded-full px-8 py-2 text-gray-700 font-semibold shadow-lg text-xs">Deposit</button>
+        <button
+          class="bg-yellow-400 rounded-full px-8 py-2 text-gray-700 font-semibold shadow-lg text-xs">Withdraw</button>
       </div>
     </div>
 
@@ -47,7 +49,20 @@ export default defineComponent({
           toolbar: {
             show: false
           },
-          background: '#425F57'
+          background: '#425F57',
+          animations: {
+            enabled: true,
+            easing: 'easein',
+            speed: 400,
+            animateGradually: {
+              enabled: true,
+              delay: 150
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350
+            }
+          }
         },
         xaxis: {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],

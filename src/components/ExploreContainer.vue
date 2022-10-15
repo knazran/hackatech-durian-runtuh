@@ -5,7 +5,8 @@
       <p class="text-gray-200 tracking-wide leading-none font-semibold" style="font-size:12px">BALANCE</p>
       <p><span class="text-gray-200 text-md">RM </span><span
           class="text-gray-200 text-3xl font-bold tracking-wider leading-none">3,400</span></p>
-      <button class="bg-duriansecondary-500 rounded-full px-6 py-0.5 text-gray-700" style="font-size:12px">134 TICKETS</button>
+      <button class="bg-duriansecondary-500 rounded-full px-6 py-0.5 text-gray-700" style="font-size:12px">134
+        TICKETS</button>
     </div>
 
     <!-- Announcement Card -->
@@ -22,15 +23,19 @@
     </ion-card>
 
 
-    <ion-card class="bg-durianprimary-900 mx-6 rounded-lg">
+    <ion-card class="bg-durianprimary-700 mx-6 rounded-lg mt-6">
       <ion-card-header class="border-b">
-        <p class="text-gray-200 font-semibold">This Week's Lucky Draw</p>
+        <p class="text-gray-200 font-semibold">This Week's Pick:</p>
+        <p class="text-gray-200 font-bold text-right text-lg mt-3">676-891-192-900</p>
       </ion-card-header>
 
       <div class="my-4 px-4">
-        <p class="text-white">THE GRAND PRIZE IS</p>
-        <p class="text-duriansecondary-500  font-semibold mt-4 text-xl">RM 25,000!</p>
+        <p class="text-white">Winning the jackpot of...</p>
+        <p class="text-duriansecondary-300  font-semibold mt-3 text-2xl">RM 1 Million!</p>
 
+      </div>
+      <div class="my-6 px-4">
+        <LuckyDrawCardVue/>
       </div>
     </ion-card>
 
@@ -39,12 +44,14 @@
 </template>
 
 <script lang="ts">
+import LuckyDrawCardVue from '@/components/LuckyDrawCard.vue';
 import { IonCard, IonCardContent, IonCardHeader } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
+
 export default defineComponent({
   name: 'ExploreContainer',
-  components: { IonCard, IonCardContent, IonCardHeader }
+  components: { IonCard, IonCardContent, IonCardHeader, LuckyDrawCardVue }
 });
 </script>
 
