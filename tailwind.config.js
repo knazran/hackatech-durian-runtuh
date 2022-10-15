@@ -94,6 +94,17 @@ module.exports = {
               '900': 'var(--ion-color-step-900)',
               '950': 'var(--ion-color-step-950)',
           },
+          durianprimary: {
+            900: '#425F57',
+            700: '#749F82',
+            500: '#A8E890',
+            300: '#CFFF8D'
+        },
+        duriansecondary: {
+          900: '#614124',
+          700: '#1C6758',
+          500: '#D6CDA4',
+      },
       }
       }
   }
