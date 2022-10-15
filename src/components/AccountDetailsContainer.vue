@@ -5,14 +5,14 @@
       <p class="text-gray-200 tracking-wide leading-none font-semibold" style="font-size:12px">BALANCE</p>
       <p><span class="text-gray-200 text-md">RM </span><span
           class="text-gray-200 text-3xl font-bold tracking-wider leading-none">3,400</span></p>
-      <button class="bg-duriansecondary-500 rounded-full px-6 py-0.5 text-gray-700" style="font-size:12px">134
+      <button class="bg-duriansecondary-500 rounded-full px-6 py-0.5 mb-3 text-gray-700" style="font-size:12px">134
         TICKETS</button>
 
     </div>
-    <div class="bg-durianprimary-900 h-36 border-0" style="height:160px">
+    <div class="bg-durianprimary-900 h-36 border-0 -translate-y-1" style="height:160px">
       <VueApexCharts height="140px" type="line" :options="options" :series="series"></VueApexCharts>
     </div>
-    <div class="bg-durianprimary-900 py-2">
+    <div class="bg-durianprimary-900 -translate-y-2 py-2">
       <div class="grid grid-cols-4 text-xs text-center ">
         <p class="text-gray-300">1M</p>
         <p class="text-gray-300">3M</p>
