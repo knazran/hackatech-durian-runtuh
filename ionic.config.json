@@ -1,0 +1,7 @@
+{
+  "name": "hack-a-tech-prizey",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
