@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   content: ["./src/**/*.{html,js,ts,vue}"],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
+
 module.exports = {
-  purge: [
-      './src/**/*.html',
-      './src/**/*.vue',
-      './src/**/*.ts',
-  ],
+  content: ["./src/**/*.{html,js,ts,vue}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
       screens: {
@@ -13,7 +17,8 @@ module.exports = {
           'lg': '992px',
           'xl': '1200px',
       },
-      colors: {
+      extend: {
+        colors: {
           primary: {
               default: 'var(--ion-color-primary)',
               contrast: 'var(--ion-color-primary-contrast)',
@@ -89,6 +94,7 @@ module.exports = {
               '900': 'var(--ion-color-step-900)',
               '950': 'var(--ion-color-step-950)',
           },
+      }
       }
   }
 }

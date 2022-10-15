@@ -1,44 +1,53 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <div class="bg-blue-800 h-36 mb-6 px-6 pt-12">
+      <p class="text-gray-400 tracking-wide leading-none font-semibold" style="font-size:12px">BALANCE</p>
+      <p><span class="text-white text-md">RM </span><span
+          class="text-white text-3xl font-bold tracking-wider leading-none">3,400</span></p>
+      <button class="bg-yellow-400 rounded-full px-6 py-1 text-gray-700" style="font-size:12px">134 TICKETS</button>
+    </div>
+
+    <!-- Announcement Card -->
+    <ion-card class="bg-blue-800 mx-6 rounded-lg">
+      <ion-card-header>
+        <p class="text-gray-200 font-semibold">Unlock more from your paycheck</p>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p class="text-white">Here's a small text description for the card content. Nothing more, nothing less.</p>
+
+        <button class="text-yellow-400 font-semibold mt-8">Join the Waitlist -></button>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-card class="bg-blue-800 mx-6 rounded-lg">
+      <ion-card-header class="border-b">
+        <p class="text-gray-200 font-semibold">This Week's Lucky Draw</p>
+      </ion-card-header>
+
+      <div class="my-4 px-4">
+        <p class="text-white">THE GRAND PRIZE IS</p>
+        <p class="text-yellow-400 font-semibold mt-4 text-xl">RM 25,000!</p>
+
+      </div>
+    </ion-card>
+
+
   </div>
 </template>
 
 <script lang="ts">
+import { IonCard, IonCardContent, IonCardHeader } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'ExploreContainer',
-  props: {
-    name: String
-  }
+  components: { IonCard, IonCardContent, IonCardHeader }
 });
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
 </style>
