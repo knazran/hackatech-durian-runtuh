@@ -22,7 +22,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { walletOutline, square, triangle, ticketOutline, peopleOutline } from 'ionicons/icons';
+import { walletOutline, ticketOutline, peopleOutline } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'TabsPage',
