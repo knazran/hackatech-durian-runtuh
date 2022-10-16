@@ -1,14 +1,31 @@
 <template>
-    <div id="container">
-        <div class="bg-durianprimary-900 px-6 pb-2 pt-10">
-            <div class="flex justify-between">
+    <div id="container" class="bg-durianprimary-700 h-screen">
+        <!-- Header -->
+        <div class="bg-durianprimary-900 ">
+            <div class="flex justify-between px-6 pb-2 pt-10">
                 <ion-icon @click="() => router.back()" :icon="chevronBackOutline" class="text-gray-200"></ion-icon>
                 <p class="text-gray-200 tracking-wide leading-none font-semibold">Farm Details</p>
                 <p class="text-durianprimary-900">d</p>
             </div>
+            <div class="relative h-12 bg-durianprimary-900 ">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#FECA16" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#CFFF8D" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#A8E890" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#749F82" />
+                </g>
+            </svg>
+        </div>
         </div>
 
-        <ion-card class="bg-duriansecondary-300 mx-6 rounded-lg shadow-2xl my-6 ">
+        <div class="-translate-y-4 bg-durianprimary-700 py-4">
+            <ion-card class="bg-duriansecondary-300 mx-6 rounded-lg shadow-2xl my-6 ">
             <ion-card-content>
 
                 <div class="flex justify-between mb-4">
@@ -70,6 +87,8 @@
 
             </ion-card-content>
         </ion-card>
+        </div>
+        
 
 
 
