@@ -8,7 +8,7 @@
         TICKETS</button>
     </div>
     <div class="-translate-y-1">
-      <img src="assets/wave4.png"/>
+      <img src="assets/wave4.png" />
     </div>
 
     <ion-card class="bg-duriansecondary-300 mx-6 rounded-lg shadow-2xl -translate-y-16">
@@ -31,7 +31,8 @@
         </div>
         <div class="flex justify-between">
           <button class="text-gray-700 font-semibold text-xs underline">How It Works</button>
-          <button @click="() => router.push('/tabs/tab3/manage-farm')" class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Manage</button>
+          <button @click="() => router.push('/tabs/tab3/manage-farm')"
+            class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Manage</button>
         </div>
       </ion-card-content>
     </ion-card>
@@ -46,12 +47,11 @@ export default defineComponent({
   name: 'PoolParty',
   components: {},
   setup() {
-      const router = useRouter();
-      return { router };
-    },
+    const router = useRouter();
+    return { router };
+  },
 });
 </script>
 
 <style>
-
 </style>

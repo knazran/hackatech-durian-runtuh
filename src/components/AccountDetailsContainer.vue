@@ -188,7 +188,7 @@ export default defineComponent({
           animations: {
             enabled: true,
             easing: 'easein',
-            speed: 400,
+            speed: 1000,
             animateGradually: {
               enabled: true,
               delay: 150
