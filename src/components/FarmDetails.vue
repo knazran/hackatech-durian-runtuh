@@ -60,7 +60,7 @@
             <p class="text-gray-200 font-bold text-xs mb-2">Tickets Allocated (Max 134)</p>
             <div class="flex">
                 <input class="mr-2 bg-duriansecondary-500 rounded-md text-gray-800 px-2 w-2/3" value="10" />
-                <button class="rounded-md w-1/3 bg-durianprimary-700 text-gray-200 text-center py-1 px-4">Update</button>
+                <button class="rounded-md w-1/3 bg-durianprimary-900 text-gray-200 text-center py-1 px-4">Update</button>
             </div>
         </div>
 
@@ -131,7 +131,7 @@ export default defineComponent({
 
 .wave:nth-of-type(2) {
   top: -75px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 11s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 
