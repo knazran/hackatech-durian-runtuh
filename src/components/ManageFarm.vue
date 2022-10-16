@@ -1,27 +1,32 @@
 <template>
     <div id="container" class="bg-durianprimary-700 h-screen">
-        <div class="bg-durianprimary-900 px-6 pb-2 pt-10">
-            <div class="flex justify-between">
+        <!-- Header -->
+        <div class="bg-durianprimary-900 ">
+            <div class="flex justify-between px-6 pb-2 pt-10">
                 <ion-icon @click="() => router.back()" :icon="chevronBackOutline" class="text-gray-200"></ion-icon>
                 <p class="text-gray-200 tracking-wide leading-none font-semibold">Manage Farm</p>
                 <p class="text-durianprimary-900">d</p>
             </div>
+            <div class="relative h-12 bg-durianprimary-900 ">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#FECA16" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#CFFF8D" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#A8E890" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#749F82" />
+                </g>
+            </svg>
         </div>
-        <div class="relative h-20">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-  <defs>
-    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-  </defs>
-  <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="#FECA16" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="#CFFF8D" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="#A8E890" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="#749F82" />
-  </g>
-</svg>
         </div>
 
-        <div class="my-6 flex px-4 justify-center space-x-4">
+        <!-- Content -->
+        <div class="-translate-y-4 bg-durianprimary-700 py-4">
+            <div class="my-4 flex px-4 justify-center space-x-4">
             <button @click="() => router.push('/tabs/tab3/manage-farm')"
                 class="rounded-md bg-durianprimary-500 text-gray-700 text-center py-2 px-6 text-sm font-bold">Create
                 Farm</button>
@@ -52,11 +57,13 @@
                     </div>
                     <div>
                         <button @click="() => router.push('/tabs/tab3/farm-details')"
-                        class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Details</button>
+                            class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Details</button>
                     </div>
                 </div>
             </ion-card-content>
         </ion-card>
+        </div>
+        
     </div>
 </template>
   
@@ -78,48 +85,54 @@ export default defineComponent({
   
 <style>
 .waves {
-  position:relative;
-  width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
 }
 
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.95,.5,.45,.5)     infinite;
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.95, .5, .45, .5) infinite;
 }
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
 }
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
 }
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
 }
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
 }
+
 @keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
 }
-
-
 </style>
