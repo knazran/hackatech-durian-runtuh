@@ -1,14 +1,18 @@
 <template>
     <div id="container">
-        <div class="bg-durianprimary-900 px-6 pb-2 pt-10">
-            <div class="flex justify-between">
+        <div class="bg-durianprimary-900 px-6 pb-2 pt-10 zpos">
+            <div class="flex justify-between ">
                 <ion-icon @click="() => router.back()" :icon="chevronBackOutline" class="text-gray-200"></ion-icon>
-                <p class="text-gray-200 tracking-wide leading-none font-semibold">Farm Details</p>
-                <p class="text-durianprimary-900">d</p>
+                <p class="tracking-wide leading-none font-semibold text-gray-200">Farm Details</p>
+                <p class="text-durianprimary-900"></p>
+                <div class="ocean">
+                    <div class="wave"></div>
+                    <!-- <div class="wave"></div> -->
+                </div>
             </div>
         </div>
 
-        <ion-card class="bg-duriansecondary-300 mx-6 rounded-lg shadow-2xl my-6 ">
+        <ion-card class="bg-duriansecondary-300 mx-6 rounded-lg shadow-2xl my-6 m-top">
             <ion-card-content>
 
                 <div class="flex justify-between mb-4">
@@ -53,10 +57,10 @@
 
         <!-- Input -->
         <div class="px-6">
-            <p class="text-durianprimary-900 font-bold text-xs mb-2">Tickets Allocated (Max 134)</p>
+            <p class="text-gray-200 font-bold text-xs mb-2">Tickets Allocated (Max 134)</p>
             <div class="flex">
                 <input class="mr-2 bg-duriansecondary-500 rounded-md text-gray-800 px-2 w-2/3" value="10" />
-                <button class="rounded-md w-1/3 bg-durianprimary-900 text-gray-200 text-center py-1 px-4">Update</button>
+                <button class="rounded-md w-1/3 bg-durianprimary-700 text-gray-200 text-center py-1 px-4">Update</button>
             </div>
         </div>
 
@@ -93,4 +97,59 @@ export default defineComponent({
   
 <style>
 
+.m-top {
+    margin-top: 10rem;
+}
+
+.zpos {
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width:100%;
+}
+
+.ocean { 
+  height: 80%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #749F82;
+  z-index: -99;
+}
+
+.wave {
+  background: url(newwave.svg) repeat-x; 
+  position: absolute;
+  top: -100px;
+  width: 6400px;
+  height: 100px;
+  animation: wave 11s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -75px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
 </style>
