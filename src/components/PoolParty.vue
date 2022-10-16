@@ -31,7 +31,7 @@
         </div>
         <div class="flex justify-between">
           <button class="text-gray-700 font-semibold text-xs underline">How It Works</button>
-          <button @click="() => router.push('/tabs/tab3/manage-farm')"
+          <button @click="() => router.push('/manage-farm')"
             class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Manage</button>
         </div>
       </ion-card-content>

@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import TabsPage from '../views/TabsPage.vue'
 import IntroPage from '../views/IntroPage.vue'
+import ManageFarmPage from '../views/ManageFarmPage.vue'
+import FarmDetailsPage from '../views/FarmDetailsPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -28,16 +30,16 @@ const routes: Array<RouteRecordRaw> = [
         path: 'tab3',
         component: () => import('@/views/Tab3Page.vue')
       },
-      {
-        path: 'tab3/manage-farm',
-        component: () => import('@/views/ManageFarmPage.vue')
-      },
-      {
-        path: 'tab3/farm-details',
-        component: () => import('@/views/FarmDetailsPage.vue')
-      }
     ]
-  }
+  },
+  {
+    path: '/manage-farm',
+    component: ManageFarmPage
+  },
+  {
+    path: '/farm-details',
+    component: FarmDetailsPage
+  },
 ]
 
 const router = createRouter({

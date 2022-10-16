@@ -1,5 +1,5 @@
 <template>
-  <ion-page class="bg-white">
+  <ion-page class="h-screen" style="background-color: #D6CDA4">
     <div class="flex flex-col justify-center items-center h-screen">
       <ion-img src="assets/durian1.png"></ion-img>
       <p class="text-durianprimary-900 font-bold text-3xl mt-4">DURIAN RUNTUH</p>

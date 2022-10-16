@@ -27,10 +27,10 @@
         <!-- Content -->
         <div class="-translate-y-4 bg-durianprimary-700 py-4">
             <div class="my-4 flex px-4 justify-center space-x-4">
-            <button @click="() => router.push('/tabs/tab3/manage-farm')"
+            <button @click="() => router.push('/manage-farm')"
                 class="rounded-md bg-durianprimary-500 text-gray-700 text-center py-2 px-6 text-sm font-bold">Create
                 Farm</button>
-            <button @click="() => router.push('/tabs/tab3/manage-farm')"
+            <button @click="() => router.push('/manage-farm')"
                 class="rounded-md bg-durianprimary-500 text-gray-700 text-center py-2 px-6 text-sm font-bold">Join
                 Farm</button>
         </div>
@@ -56,7 +56,7 @@
                         <p class="text-xs text-duriansecondary-900">402 tickets next week</p>
                     </div>
                     <div>
-                        <button @click="() => router.push('/tabs/tab3/farm-details')"
+                        <button @click="() => router.push('/farm-details')"
                             class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Details</button>
                     </div>
                 </div>
