@@ -27,7 +27,10 @@
         </div>
       </div>
       <div v-else>
-        <button class="animate-bounce w-full mt-6 rounded-full bg-durianprimary-900 text-duriansecondary-300 text-center py-2 text-md font-bold">Watch the draw LIVE on Tiktok!</button>
+        <a href="https://vt.tiktok.com/ZSRgm3Jgg/"> <button
+            class="animate-bounce w-full mt-6 rounded-full bg-durianprimary-900 text-duriansecondary-300 text-center py-2 text-md font-bold">Watch
+            the draw LIVE on Tiktok!</button>
+        </a>
       </div>
     </div>
   </ion-card>

@@ -46,7 +46,7 @@
                     </div>
                     <div>
                         <p class="text-xs text-duriansecondary-400 text-right">Tickets</p>
-                        <p class="text-md text-durianprimary-900 font-bold mt-1 tracking-wider text-right">657</p>
+                        <p class="text-md text-durianprimary-900 font-bold mt-1 tracking-wider text-right">10</p>
                     </div>
                 </div>
                 <div class="flex justify-between">
