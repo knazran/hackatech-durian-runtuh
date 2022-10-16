@@ -37,7 +37,7 @@
 
       <div class="px-4 py-4">
           <p class="text-duriansecondary-400 align-bottom">YOUR TICKETS</p>
-          <p class="text-durianprimary-900 font-bold text-right text-md mt-1">676-891-192-900</p>
+          <p class="text-durianprimary-900 font-bold text-right text-md mt-1">512-621-776-124</p>
           <div class="mt-4">
             <button class="w-full rounded-full bg-duriansecondary-450 text-gray-200 text-center py-0.5" style="font-size:12px">Pool Payout: 100%</button>
           </div>
@@ -50,7 +50,7 @@
       <TicketBreakVue/>
 
       <div class=" px-4 py-4">
-          <p class="text-durianprimary-900 font-bold text-right text-md mt-1">676-891-192-900</p>
+          <p class="text-durianprimary-900 font-bold text-right text-md mt-1">825-178-614-733</p>
           <div class="mt-4">
             <button class="w-full rounded-full bg-duriansecondary-450 text-gray-200 text-center py-0.5" style="font-size:12px">Pool Payout: 100%</button>
           </div>
@@ -63,7 +63,7 @@
       <TicketBreakVue/>
 
       <div class="px-4 py-4">
-          <p class="text-durianprimary-900 font-bold text-right text-md mt-1">676-891-192-900</p>
+          <p class="text-durianprimary-900 font-bold text-right text-md mt-1">162-632-819-184</p>
           <div class="mt-4">
             <button class="w-full rounded-full bg-duriansecondary-450 text-gray-200 text-center py-0.5" style="font-size:12px">Pool Payout: 100%</button>
           </div>
