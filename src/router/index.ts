@@ -31,6 +31,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'tab3/manage-farm',
         component: () => import('@/views/ManageFarmPage.vue')
+      },
+      {
+        path: 'tab3/farm-details',
+        component: () => import('@/views/FarmDetailsPage.vue')
       }
     ]
   }

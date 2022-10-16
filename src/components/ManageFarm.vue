@@ -31,10 +31,11 @@
                 </div>
                 <div class="flex justify-between">
                     <div>
-                      <p class="text-xs text-duriansecondary-900">10 active members</p>
+                      <p class="text-xs text-duriansecondary-900">70 active members</p>
                       <p class="text-xs text-duriansecondary-900">230 active tickets</p>
+                      <p class="text-xs text-duriansecondary-900">402 tickets next week</p>
                     </div>
-                    <button @click="() => router.push('/tabs/tab3/manage-farm')"
+                    <button @click="() => router.push('/tabs/tab3/farm-details')"
                         class="rounded-full bg-durianprimary-900 text-gray-200 text-center py-1 px-6">Details</button>
                 </div>
             </ion-card-content>
